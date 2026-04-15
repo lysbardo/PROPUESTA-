@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Yoselin ❤️</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #ff758c, #ff7eb3);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 30px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #si {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #no {
+        background-color: #f44336;
+        color: white;
+        position: absolute;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>YOSELIN ❤️</h1>
+    <h2>¿Quieres ser mi novia?</h2>
+
+    <button id="si" onclick="respuestaSi()">Sí 💖</button>
+    <button id="no" onmouseover="moverNo()">No 😢</button>
+</div>
+
+<script>
+function respuestaSi() {
+    document.body.innerHTML = "<h1 style='margin-top:200px;'>Sabía que dirías que sí ❤️🥹</h1>";
+}
+
+function moverNo() {
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+    document.getElementById('no').style.left = x + "px";
+    document.getElementById('no').style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
